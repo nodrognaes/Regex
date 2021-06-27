@@ -44,3 +44,5 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
+My name is Sean Gordon. I'm a software development bootcamp student through Rutgers University. I'm excited to continue learning and enter the field. Please visit my [Github page](https://github.com/nodrognaes) or email any questions to [nodrog.naes@gmail.com](mailto:nodrog.naes@gmail.com).
