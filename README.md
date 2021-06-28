@@ -1,13 +1,15 @@
 # Matching an Email using Regular Expressions #
 
-Introductory paragraph (replace this with your text)
-In this gist, we will be examining the Regular Expression (regex) for matching an email:
+Regular Expressions, or regex, are sequences of characters that form a search pattern. These can be helpful in codis, as they are used to confirm the presence of a specific pattern in a string.
 
-`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this gist, we will be examining the regex code for verifying that user input is a valid email address:
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+Each part of this expression gives specific instructions for what to search for on a webpage. 
 
 ## Table of Contents
 
