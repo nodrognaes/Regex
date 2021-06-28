@@ -9,7 +9,11 @@ In this gist, we will be examining the regex code for verifying that user input 
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-Each part of this expression gives specific instructions for what to search for on a webpage. 
+Each part of this expression gives specific instructions for what to search for or validate on a webpage. The above code specifies that an email address must:
+
+* This must be followed by an ampersat (@), then 
+* The ending of the string may include lowercase letters a-z and must be between 2 and 6 characters
+
 
 ## Table of Contents
 
@@ -23,6 +27,8 @@ Each part of this expression gives specific instructions for what to search for 
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
+
+
 
 ### Anchors
 
@@ -42,12 +48,10 @@ Each part of this expression gives specific instructions for what to search for 
 
 ### Resources Used
 
-- YouTube
+- YouTube: The Coding Train
 - W3Schools
 - etc.
 
 ## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
 
 My name is Sean Gordon. I'm a software development bootcamp student through Rutgers University. I'm excited to continue learning and enter the field. Please visit my [Github page](https://github.com/nodrognaes) or email any questions to [nodrog.naes@gmail.com](mailto:nodrog.naes@gmail.com).
