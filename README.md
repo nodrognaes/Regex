@@ -1,7 +1,7 @@
 # Matching an Email using Regular Expressions #
 
-Regular Expressions, or regex, are sequences of characters that form a search pattern. These can be helpful in codis, as they are used to confirm the presence of a specific pattern in a string.
-
+Regular Expressions, or regex, are sequences of characters that form a search pattern. These can be helpful in coding, as they are used to confirm the presence of a specific pattern in a string, using letters, numbers, and special characters.
+This information can then be extracted from the text for various purposes. Some examples of regex include patterns for matching usernames, URL's, HEX values, and, for this tutorial's example, email addresses.
 
 ## Summary
 
@@ -9,11 +9,7 @@ In this gist, we will be examining the regex code for verifying that user input 
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-Each part of this expression gives specific instructions for what to search for or validate on a webpage. The above code specifies that an email address must:
-
-* This must be followed by an ampersat (@), then 
-* The ending of the string may include lowercase letters a-z and must be between 2 and 6 characters
-
+Each part of this expression gives specific instructions for what to find or validate on a webpage. The next sections will break down this code to help understand what it means and how it works.
 
 ## Table of Contents
 
@@ -28,6 +24,9 @@ Each part of this expression gives specific instructions for what to search for 
 
 ## Regex Components
 
+the / symbols mark the beginning and end of the regex pattern
+unspecified number of characters, including digits 0-9, upper or lower case letters a-z
+\d can be used in place of any digit from 0 to 9
 
 
 ### Anchors
@@ -50,7 +49,8 @@ Each part of this expression gives specific instructions for what to search for 
 
 - YouTube: The Coding Train
 - W3Schools
-- etc.
+- regexone.com
+- codeburst.io
 
 ## Author
 
