@@ -68,7 +68,6 @@ In general, the characters in a regular expression are taken literally in contex
 ### Resources Used
 
 - YouTube: The Coding Train
-- W3Schools
 - regexone.com
 - codeburst.io
 - regular-expressions.info
