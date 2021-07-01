@@ -33,24 +33,37 @@ Regex can also be created using a RegExp constructor, which can be written as:
 unspecified number of characters, including digits 0-9, upper or lower case letters a-z
 \d can be used in place of any digit from 0 to 9
 
-
 ### Anchors
 
-In regex, __anchors__ do not match characters, but instead mark a certain position in the code. Our regex uses `^` and `$` to match the positions between our first and last string characters, respectively.
+In regex, _anchors_ do not match characters, but instead mark a certain position in the code. Our regex uses `^` and `$` to match the positions between our first and last string characters respectively. In other words, the anchors indicate what the string must start or end with.
 
 ### Quantifiers
 
+In our example, `{2,6}` is a special component known as a _quantifier_, which sets limits for the preceding string. This means that the end section of the string must include at least 2 and no more than 6 characters. Specifically, in this case, it must include 2-6 lowercase letters, given the preceding pattern `[a-z\.]`.
+
 ### Grouping Constructs
+
+_Grouping Constructs_ are used in regex to give different parts of a string different requirements. At the end of our email, for instance, since `([a-z\.]{2,6})` is within opening and closing parentheses, the 2-6 character rule will only apply to this section of code. This is used multiple times througout our regex to apply different specifications to different sections.
 
 ### Bracket Expressions
 
+We have several _bracket expressions_ in our regex (`[a-z0-9_\.-]`, `[\da-z\.-]`, and `[a-z\.]`). _Bracket expressions_ match characters according to any of several guidelines, instead of all. `[a-z0-9_\.-]`, for example, looks for lowercase letters from a-z OR numbers from 0-9, an underscore, period, or hyphen. 
+
 ### Character Classes
+
+_Character classes_ are sets of characters as defined in a regex, inccluding bracket expressions. An example of a _character class_ in our email regex would be the `\d` in `[\da-z\.-]`. \d indicates any numnber from 0-9, which could also be written `[0-9`. Other uses include `\w` for any alphanumeric character, `\s` for a space, tab, or line break, and `.` for any character. Changing the letter to a capital would match the inverse.
 
 ### The OR Operator
 
+We do not use the _OR Operator_ (|) in our code, but this can be used to esasentially apply bracket expression rules to other parts of the pattern, in that it will match with one requirement OR another, using | to separate character requirements.
+
 ### Flags
 
+While we also don't utilize one in our regex, _flags_ can be added to the end of a pattern, after the ending /, and can be used for several different purposes. The most common flags in regex indicate performing a global search (g), a multi-line search (m), and a case-insensitive search (i). 
+
 ### Character Escapes
+
+In general, the characters in a regular expression are taken literally in context of regular expressions. This can be avoided by using a backslash (\) before a character. While there are several \'s in our expression, this rule does not apply for \'s inside of bracket expressions. Therefore, the only example of a _character escape_ in our code is `\.`, indicating that we require a period in our string. The \ must be included, because a . on its own has its own specific meaning within regex.
 
 ### Resources Used
 
