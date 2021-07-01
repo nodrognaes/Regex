@@ -5,7 +5,7 @@ This information can then be extracted from the text for various purposes. Some 
 
 ## Summary
 
-In this gist, we will be examining the regex code for verifying that user input is a valid email address:
+In this tutorial, we will be examining the regex code for verifying that user input is a valid email address:
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
@@ -40,6 +40,7 @@ In regex, _anchors_ do not match characters, but instead mark a certain position
 ### Quantifiers
 
 In our example, `{2,6}` is a special component known as a _quantifier_, which sets limits for the preceding string. This means that the end section of the string must include at least 2 and no more than 6 characters. Specifically, in this case, it must include 2-6 lowercase letters, given the preceding pattern `[a-z\.]`.
+Another quantifier used in our code is `+`, indicating that we are looking to match the specified pattern once or more.
 
 ### Grouping Constructs
 
@@ -47,11 +48,11 @@ _Grouping Constructs_ are used in regex to give different parts of a string diff
 
 ### Bracket Expressions
 
-We have several _bracket expressions_ in our regex (`[a-z0-9_\.-]`, `[\da-z\.-]`, and `[a-z\.]`). _Bracket expressions_ match characters according to any of several guidelines, instead of all. `[a-z0-9_\.-]`, for example, looks for lowercase letters from a-z OR numbers from 0-9, an underscore, period, or hyphen. 
+We have several _bracket expressions_ in our regex (`[a-z0-9_\.-]`, `[\da-z\.-]`, and `[a-z\.]`). Bracket expressions match characters according to any of several guidelines, instead of all. `[a-z0-9_\.-]`, for example, looks for lowercase letters from a-z OR numbers from 0-9, an underscore, period, or hyphen. 
 
 ### Character Classes
 
-_Character classes_ are sets of characters as defined in a regex, inccluding bracket expressions. An example of a _character class_ in our email regex would be the `\d` in `[\da-z\.-]`. \d indicates any numnber from 0-9, which could also be written `[0-9`. Other uses include `\w` for any alphanumeric character, `\s` for a space, tab, or line break, and `.` for any character. Changing the letter to a capital would match the inverse.
+_Character classes_ are sets of characters as defined in a regex, inccluding bracket expressions. An example of a character class in our email regex would be the `\d` in `[\da-z\.-]`. \d indicates any numnber from 0-9, which could also be written `[0-9`. Other uses include `\w` for any alphanumeric character, `\s` for a space, tab, or line break, and `.` for any character. Changing the letter to a capital would match the inverse.
 
 ### The OR Operator
 
