@@ -30,9 +30,6 @@ Regex can also be created using a RegExp constructor, which can be written as:
 
 `var regex = new RegExp('^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$')`
 
-unspecified number of characters, including digits 0-9, upper or lower case letters a-z
-\d can be used in place of any digit from 0 to 9
-
 ### Anchors
 
 In regex, _anchors_ do not match characters, but instead mark a certain position in the code. Our regex uses `^` and `$` to match the positions between our first and last string characters respectively. In other words, the anchors indicate what the string must start or end with.
